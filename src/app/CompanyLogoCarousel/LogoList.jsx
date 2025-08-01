@@ -13,13 +13,13 @@ import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
 
 // Import images
-import log1 from '../assets/images/log1.png';
-import log2 from '../assets/images/log2.png';
-import log3 from '../assets/images/log3.png';
-import log4 from '../assets/images/log4.png';
-import log5 from '../assets/images/log5.png';
+// import log1 from '/bg1.jpg';
+// import log2 from '/bg1.jpg';
+// import log3 from '/bg1.jpg';
+// import log4 from '/bg1.jpg';
+// import log5 from '/bg1.jpg';
 
-const logos = [log1, log2, log3, log4, log5, log1, log2, log3, log4, log5];
+const logos = ['/bg1.jpg', '/bg1.jpg', '/bg1.jpg', '/bg1.jpg', '/bg1.jpg'];
 
 export default function LogoList() {
     return (
