@@ -3,7 +3,7 @@ export const products = [
     {
         id: 1,
         name: 'Shops Signs',
-        image: 'shop_sign.jpg',
+        image: '/shop_sign.jpg',
         price: '$599',
         rating: 4.5,
         text: "Make your storefront stand out with our custom Shop Signs — designed to attract customers, reflect your brand, and enhance visibility. "
@@ -11,7 +11,7 @@ export const products = [
     {
         id: 2,
         name: '3D Signs',
-        image: '3D_sign.jpg',
+        image: '/3D_sign.jpg',
         price: '$349',
         rating: 4.2
     },
