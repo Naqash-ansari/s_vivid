@@ -1,23 +1,47 @@
 {
-  "name": "sign_vivid",
+  "name": "vivid_signs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.5"
+    "@headlessui/react": "^2.2.0",
+    "@next/font": "^14.2.15",
+    "aos": "^2.3.4",
+    "axios": "^1.9.0",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.23.0",
+    "next": "15.2.2",
+    "nodemailer": "^7.0.0",
+    "notiflix": "^3.2.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-google-reviews": "^1.7.4",
+    "react-icons": "^5.5.0",
+    "react-photo-album": "^3.1.0",
+    "react-pick-color": "^2.0.0",
+    "react-player": "^2.16.0",
+    "react-pop-cards": "^1.0.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slot-counter": "^3.3.0",
+    "react-spinners": "^0.17.0",
+    "react-toastify": "^11.0.5",
+    "react-type-animation": "^3.2.0",
+    "sass": "^1.86.0",
+    "swiper": "^11.2.5",
+    "yet-another-react-lightbox": "^3.21.8"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@types/react": "19.1.8",
     "eslint": "^9",
-    "eslint-config-next": "15.4.5",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-next": "15.2.2",
+    "tailwindcss": "^4",
+    "typescript": "5.8.3"
   }
 }
