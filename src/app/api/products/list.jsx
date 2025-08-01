@@ -18,14 +18,14 @@ export const products = [
     {
         id: 3,
         name: 'Neon',
-        image: 'next.svg',
+        image: '/neon1.gif',
         price: '$229',
         rating: 4.0
     },
     {
         id: 4,
         name: 'Projection Signs',
-        image: 'next.svg',
+        image: '/p3.jpg',
         price: '$699',
         rating: 4.7
     },

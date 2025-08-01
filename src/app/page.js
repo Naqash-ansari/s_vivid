@@ -3,6 +3,7 @@ import ProductList from './(home)/product/SignProduct/ProductList';
 import CompanyLogoCarousel from './CompanyLogoCarousel/page'
 import PrintProduct from './(home)/product/Banner/PrintProduct';
 import GoogleReview from './reviews/GoogleReview';
+import VideoPlayer from './(home)/VideoPlayer/page';
 
 
 
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Marquee />
-      {/* <VideoPlayer /> */}
+      <VideoPlayer />
       <ProductList />
       <CompanyLogoCarousel />
       <PrintProduct />
