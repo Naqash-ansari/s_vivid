@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import img from '../assets/images/log3.png'
-import logo1 from '../assets/images/log1.png'
-import logo2 from '../assets/images/log2.png'
-import logo3 from '../assets/images/log4.png'
+// import img from '../assets/images/lo.png'
+// import logo1 from '../assets/images/log1.png'
+// import logo2 from '../assets/images/log2.png'
+// import logo3 from '../assets/images/log4.png'
 
 const GoogleReview = () => {
     return (
@@ -42,7 +42,7 @@ const GoogleReview = () => {
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
 
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
 
@@ -72,7 +72,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -100,7 +100,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -135,7 +135,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -165,7 +165,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -195,7 +195,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -230,7 +230,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -259,7 +259,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -289,7 +289,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -322,7 +322,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -351,7 +351,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
@@ -381,7 +381,7 @@ const GoogleReview = () => {
                                     <div
                                         className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                         <div className="flex justify-center items-center text-center w-full">
-                                            <Image width={150} height={100} src={img} alt="image" />
+                                            <Image width={150} height={100} src='/bg1.jpg' alt="image" />
                                         </div>
                                         <div className="flex items-center space-x-4">
                                             {/* <img
