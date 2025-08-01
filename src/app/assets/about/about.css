@@ -1,0 +1,5 @@
+.about_bg {
+    background-image: url(../../assets/productList/pro_bg.jpg);
+    height: 50vh;
+    background-position: cover;
+}
