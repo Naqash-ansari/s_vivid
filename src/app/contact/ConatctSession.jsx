@@ -41,7 +41,7 @@ const ConatctSession = () => {
                             <span className="text-3xl">
                                 <Image alt="phone" width={100} height={'auto'} src={phone} />
                             </span>
-                            <p className="font-semibold mt-3 text-white">470-601-1911</p>
+                            <p className="font-semibold mt-3 text-white">+447728339751</p>
                         </a>
                     </div>
 
