@@ -1,4 +1,6 @@
+import Image from "next/image"
 import FooterLogo from "./FooterLogo"
+import Link from "next/link"
 
 const Page = () => {
     return (
@@ -19,7 +21,7 @@ const Page = () => {
 
                 <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
                     <div className="md:max-w-md lg:col-span-2">
-                        <a
+                        {/* <a
                             href="/"
                             aria-label="Go home"
                             title="Company"
@@ -43,17 +45,24 @@ const Page = () => {
                             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
                                 Sign <span className="text-amber-600 underline"><sup>vivid</sup></span>
                             </span>
-                        </a>
+                        </a> */}
+
+                        <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
+                            <div className="flex shrink-0 items-center">
+
+                                <Image src='/sign-vivid.jpg' alt='logo' width={120} height={120} />
+                            </div>
+                        </div>
+
                         <div className="mt-4 lg:max-w-sm">
                             <p className="text-sm text-white">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque laudantium, totam rem aperiam.
+                                Sign Vivid specializes in custom signage and 3D lettering that brings your brand to life. We work with businesses of all sizes to create lasting impressions.
                             </p>
                             <p className="mt-4 text-sm text-white">
-                                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                beatae vitae dicta sunt explicabo.
+                                From illuminated storefront signs to bespoke interior branding, we deliver quality craftsmanship with timely service you can rely on.
                             </p>
                         </div>
+
                     </div>
                     <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
                         <div>
@@ -62,84 +71,69 @@ const Page = () => {
                             </p>
                             <ul className="mt-2 space-y-2">
                                 <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-teal-accent-400"
+                                    <Link
+                                        href="/product/SignProduct/1"
+                                        className="transition-colors duration-300 text-white hover:text-amber-500"
                                     >
-                                        News
-                                    </a>
+                                        Shops Signs
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="/"
+                                    <Link
+                                        href="/product/SignProduct/2"
                                         className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                                     >
-                                        World
-                                    </a>
+                                        3D Signs
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="/"
+                                    <Link
+                                        href="/product/SignProduct/3"
                                         className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                                     >
-                                        Games
-                                    </a>
+                                        Neon
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="/"
+                                    <Link
+                                        href="/product/SignProduct/4"
                                         className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                                     >
-                                        References
-                                    </a>
+                                        Projection Sign
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <p className="font-semibold tracking-wide text-white">
-                                Cherry
+                                Pages
                             </p>
                             <ul className="mt-2 space-y-2">
                                 <li>
-                                    <a
-                                        href="/"
+                                    <Link
+                                        href="/about"
                                         className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                                     >
-                                        Web
-                                    </a>
+                                        About Us
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="/"
+                                    <Link
+                                        href="/gallery"
                                         className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                                     >
-                                        eCommerce
-                                    </a>
+                                        Gallery
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="/"
+                                    <Link
+                                        href="/contact"
                                         className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                                     >
-                                        Business
-                                    </a>
+                                        Contact Us
+                                    </Link>
                                 </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                                    >
-                                        Entertainment
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                                    >
-                                        Portfolio
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                         <div>

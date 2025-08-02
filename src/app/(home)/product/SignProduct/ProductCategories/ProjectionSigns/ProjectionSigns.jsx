@@ -9,7 +9,7 @@ const StarRating = ({ rating }) => {
     /* same as before */
 };
 
-const imagesproduct = ['shop_sign.jpg', 'shop_sign1.jpg', 'shop_sign2.jpg', 'shop_sign3.jpg']
+const imagesproduct = ['op1.jpg', 'op2.jpg', 'op3.jpg', 'op4.webp', 'op6.jpg', 'op5.webp']
 
 
 const images = [

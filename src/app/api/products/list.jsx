@@ -29,34 +29,34 @@ export const products = [
         price: '$699',
         rating: 4.7
     },
-    {
-        id: 5,
-        name: 'PVC Banner',
-        image: 'next.svg',
-        price: '$299',
-        rating: 4.3
-    },
-    {
-        id: 6,
-        name: 'Roll-Up Banner',
-        image: 'next.svg',
-        price: '$199',
-        rating: 4.1
-    },
-    {
-        id: 7,
-        name: 'Vinyl',
-        image: 'next.svg',
-        price: '$99',
-        rating: 4.0
-    },
-    {
-        id: 8,
-        name: 'Backlits',
-        image: 'next.svg',
-        price: '$399',
-        rating: 4.6
-    },
+    // {
+    //     id: 5,
+    //     name: 'PVC Banner',
+    //     image: 'next.svg',
+    //     price: '$299',
+    //     rating: 4.3
+    // },
+    // {
+    //     id: 6,
+    //     name: 'Roll-Up Banner',
+    //     image: 'next.svg',
+    //     price: '$199',
+    //     rating: 4.1
+    // },
+    // {
+    //     id: 7,
+    //     name: 'Vinyl',
+    //     image: 'next.svg',
+    //     price: '$99',
+    //     rating: 4.0
+    // },
+    // {
+    //     id: 8,
+    //     name: 'Backlits',
+    //     image: 'next.svg',
+    //     price: '$399',
+    //     rating: 4.6
+    // },
     // {
     //     id: 9,
     //     name: 'Flags',

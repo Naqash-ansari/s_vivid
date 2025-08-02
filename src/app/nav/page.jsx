@@ -5,6 +5,7 @@ import { FaBars, FaXmark } from "react-icons/fa6";
 import { Dancing_Script } from 'next/font/google';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
+import Image from 'next/image';
 
 
 
@@ -58,10 +59,10 @@ export default function Page() {
                         {/* Logo */}
                         <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
                             <div className="flex shrink-0 items-center">
-                                <h1 className={`text-black font-bold text-4xl ${dancingScript.className}`}>
+                                {/* <h1 className={`text-black font-bold text-4xl ${dancingScript.className}`}>
                                     Sign <sup className='underline text-amber-600'>Vivid</sup>
-                                </h1>
-                                {/* <Image src={tara} alt='logo' width={150} height={150} /> */}
+                                </h1> */}
+                                <Image src='/sign-vivid.jpg' alt='logo' width={120} height={120} />
                             </div>
                         </div>
 

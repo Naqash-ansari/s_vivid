@@ -3,49 +3,39 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-import img1 from '../../../assets/productList/sb1.webp';
-import img2 from '../../../assets/productList/sb2.jpg';
-import img3 from '../../../assets/productList/sb3.jpg';
+import Link from 'next/link';
 
 const PrintProduct = () => {
     const products = [
         {
-            title: "Tailwind CSS Email Design Kit",
-            mainImage: img1,
-            subImage1: img2,
-            subImage2: img3,
+            title: "Conact Us",
+            url: 'contact',
+            mainImage: '/pp1.webp',
+            // subImage1: img2,
+            // subImage2: img3,
         },
         {
-            title: "React UI Components Kit",
-            mainImage: img1,
-            subImage1: img1,
-            subImage2: img1,
+            title: "Conact Us",
+            url: 'contact',
+            mainImage: '/pp2.webp',
+            // subImage1: img1,
+            // subImage2: img1,
         },
         {
-            title: "Next.js Starter Template",
-            mainImage: img1,
-            subImage1: img1,
-            subImage2: img1,
+            title: "Conact Us",
+            url: 'contact',
+            mainImage: '/pp3.jpg',
+            // subImage1: img1,
+            // subImage2: img1,
         },
         {
-            title: "Tailwind Admin Dashboard",
-            mainImage: img1,
-            subImage1: img1,
-            subImage2: img1,
+            title: "Contact Us",
+            url: 'contact',
+            mainImage: '/pp4.jpg',
+            // subImage1: img1,
+            // subImage2: img1,
         },
-        {
-            title: "Product 5",
-            mainImage: img1,
-            subImage1: img2,
-            subImage2: img3,
-        },
-        {
-            title: "Product 6",
-            mainImage: img1,
-            subImage1: img1,
-            subImage2: img1,
-        },
-        // Add more products if needed
+
     ];
 
     // Pagination state
@@ -77,43 +67,27 @@ const PrintProduct = () => {
                     <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
                         {/* Image Grid */}
                         <div className="flex gap-2">
-                            <div className="w-2/3">
+                            <div className="">
                                 <div className="h-82  rounded flex items-center justify-center object-cover">
                                     <Image
                                         src={product.mainImage}
                                         alt="Product"
-                                        className="h-full w-full object-cover p-1 rounded"
-
+                                        width={300}
+                                        height={300}
+                                        className="object-cover p-1 rounded"
                                     />
+
 
                                 </div>
                             </div>
-                            <div className="w-1/3 flex flex-col gap-2">
-                                <div className="h-40  rounded flex items-center justify-center">
-                                    <Image
-                                        height={900}
-                                        width={200}
-                                        src={product.subImage1}
-                                        alt="Product"
-                                        className="h-full w-full object-cover p-1 rounded"
-                                    />
-                                </div>
-                                <div className="h-40  rounded flex items-center justify-center">
-                                    <Image
-                                        height={200}
-                                        width={200}
-                                        src={product.subImage2}
-                                        alt="Product"
-                                        className="h-full w-full object-cover p-1 rounded"
-                                    />
-                                </div>
-                            </div>
+
                         </div>
                         {/* Title */}
-                        <h3 className="text-sm font-bold mt-4 bg-amber-600 text-white p-4 rounded transition-all transform border hover:border-amber-600 hover:text-amber-600 hover:bg-white hover:-translate-y-2 ease-in-out">
-                            {product.title}
-                        </h3>
-                        {/* <h3 className="text-sm font-bold mt-4 bg-amber-300 p-6 rounded text-gray-700">{product.title}</h3> */}
+                        <Link href={product.url}>
+                            <h3 className="text-sm font-bold mt-4 bg-amber-600 text-white p-4 rounded transition-all transform border hover:border-amber-600 hover:text-amber-600 hover:bg-white hover:-translate-y-2 ease-in-out">
+                                {product.title}
+                            </h3>
+                        </Link>
                     </div>
                 ))}
             </div>
