@@ -1,91 +1,57 @@
 "use client";
 
 import Image from "next/image";
-import services_series from '../assets/services/services_series.jpg'
-import islamic_box from './images/images.jpg'
-import sign_b from './images/imag.jpg'
-import ig2 from './images/images11.jpg'
-import Pizza_box from '../assets/services/pizza1.jpg'
-
+import islamic_box from "./images/images.jpg";
+import sign_b from "./images/imag.jpg";
+import ig2 from "./images/images11.jpg";
+import Pizza_box from "../assets/services/pizza1.jpg";
+import { TypeAnimation } from "react-type-animation";
 
 const AboutServices = () => {
-    const features = [
-        {
-            title: "Custom settings",
-            img: "https://www.svgrepo.com/show/530444/availability.svg",
-            desc: "We offer advanced customization. You can freely combine options like roles, languages, publish, tones, lengths, and formats.",
-        },
-        {
-            title: "Free trial",
-            img: "https://www.svgrepo.com/show/530440/machine-vision.svg",
-            desc: "We offer a free trial service without login. We provide many payment options including pay-as-you-go and subscription.",
-            link: "/pricing",
-        },
-        {
-            title: "90+ templates",
-            img: "https://www.svgrepo.com/show/530450/page-analysis.svg",
-            desc: "We offer many templates covering areas such as writing, education, lifestyle, and creativity to inspire your potential.",
-            link: "/templates",
-        },
-        {
-            title: "Use Anywhere",
-            img: "https://www.svgrepo.com/show/530453/mail-reception.svg",
-            desc: "Our product is compatible with multiple platforms including Web, Chrome, Windows, and Mac, so you can use it anywhere.",
-            link: "/download",
-        },
-    ];
-
     return (
-        <section className=" px-2 py-26">
+        <section className="px-4 py-20 bg-white">
             <div id="features" className="mx-auto max-w-6xl">
-                <p className="text-center text-base font-semibold leading-7 text-primary-500">Features</p>
-                <h2 className="text-center font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl pb-6">
-                    Eye-catching signs for your shop
+                <p className="text-center text-base font-semibold text-amber-600">Our Expertise</p>
+                <h2 className="text-center text-3xl md:text-4xl font-bold tracking-tight text-gray-800 pb-6">
+                    Eye-catching signage for every business
                 </h2>
-                <div className="flex gap-4">
 
-                    <div>
-                        <ul className="mt-16 grid grid-cols-1 gap-4 text-center text-slate-700 md:grid-cols-2">
-                            {/* {features.map((feature, index) => (
-                                <li key={index} className="rounded-xl bg-[#22324c] hover:bg-amber-600 text-white shadow-lg px-6 py-8">
-                                    {feature.link ? (
-                                        <a href={feature.link} className="group">
-                                            <Image src={feature.img} alt={feature.title} width={40} height={40} className="mx-auto" />
-                                            <h3 className="my-3 font-display font-medium group-hover:text-primary-500 ">{feature.title}</h3>
-                                            <p className="mt-1.5 text-sm leading-6 text-secondary-500">{feature.desc}</p>
-                                        </a>
-                                    ) : (
-                                        <>
-                                            <Image src={feature.img} alt={feature.title} width={40} height={40} className="mx-auto" />
-                                            <h3 className="my-3 font-display font-medium">{feature.title}</h3>
-                                            <p className="mt-1.5 text-sm leading-6 text-secondary-500">{feature.desc}</p>
-                                        </>
-                                    )}
-                                </li>
-                            ))} */}
-                            <Image src={islamic_box} width={290} height={220} className="boj-cover" alt='ser' />
-                            <Image src={ig2} width={290} height={'auto'} className="boj-cover" alt='ser' />
-                            <Image src={Pizza_box} width={280} height={'auto'} className="boj-cover" alt='ser' />
-                            <Image src={sign_b} width={280} height={'auto'} className="boj-cover" alt='ser' />
-                            {/* <Image src={islamic_box} width={500} height={500} className="boj-cover" />
-                            <Image src={islamic_box} width={500} height={500} className="boj-cover" />
-                            <Image src={islamic_box} width={500} height={500} className="boj-cover" /> */}
-                        </ul>
+                <div className="flex flex-col lg:flex-row gap-8 items-center justify-between">
+                    {/* Images */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-xl">
+                        <Image src={islamic_box} width={290} height={220} className="object-cover rounded-lg" alt="service" />
+                        <Image src={ig2} width={290} height={220} className="object-cover rounded-lg" alt="service" />
+                        <Image src='/feature2.jpg' width={290} height={220} className="object-cover rounded-lg" alt="service" />
+                        <Image src='/feature3.jpg' width={290} height={220} className="object-cover rounded-lg" alt="service" />
                     </div>
 
-                    <div className="image object-center text-center">
-                        {/* <Image width={600} height={1000} src={services_series} alt='about' /> */}
-                        <Image
-                            width={500}
-                            height={500}
-                            src={services_series}
-                            alt='about'
-                            className="w-full h-full object-cover rounded-xl"
-                        />
-                    </div>
+                    {/* Animation + Text */}
+                    <div className="text-center lg:text-left max-w-xl">
+                        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                            <TypeAnimation
+                                sequence={[
+                                    "Custom Shop Signs",
+                                    1500,
+                                    "3D Letters & LED Boards",
+                                    1500,
+                                    "Interior & Exterior Branding",
+                                    1500,
+                                    "Fast & Reliable Service",
+                                    1500,
+                                ]}
+                                speed={50}
+                                deletionSpeed={30}
+                                repeat={Infinity}
+                            />
+                        </h2>
+                        <p className="text-gray-600 text-base leading-relaxed">
+                            At <strong className="text-amber-600">Sign Vivid</strong>, we specialize in crafting <strong className="text-amber-600">bold</strong>, <strong className="text-amber-600">creative</strong>, and <strong className="text-amber-600">custom signage solutions</strong> that elevate your brand's visibility. Whether you own a <strong className="text-amber-600">restaurant</strong>, <strong className="text-amber-600">salon</strong>, <strong className="text-amber-600">retail shop</strong>, <strong className="text-amber-600">nail studio</strong>, <strong className="text-amber-600">barbershop</strong>, or a large <strong className="text-amber-600">corporate office</strong>, we design signs that reflect your unique identity and style.
+                            <br /><br />
+                            From <strong className="text-amber-600">3D illuminated letters</strong> and <strong className="text-amber-600">LED boards</strong> to <strong className="text-amber-600">indoor branding</strong> and <strong className="text-amber-600">outdoor displays</strong>, our signs are built with <strong className="text-amber-600">high precision</strong>, <strong className="text-amber-600">durability</strong>, and a strong focus on <strong className="text-amber-600">visual impact</strong>. Our mission is simple — to help your business stand out and leave a lasting impression.
+                        </p>
 
+                    </div>
                 </div>
-
             </div>
         </section>
     );

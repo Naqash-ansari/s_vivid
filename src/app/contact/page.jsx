@@ -5,7 +5,7 @@ import ConatctSession from './ConatctSession'
 
 const page = () => {
     return (
-        <div className=''>
+        <div className='bg-white'>
             <ContactFrom />
             <ConatctSession />
             <MapLocation />

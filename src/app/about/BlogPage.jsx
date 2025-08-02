@@ -1,10 +1,19 @@
-"use client"
+"use client";
 
-import { useEffect } from "react";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
-const BlogPage = () => {
+// Slugify utility function
+const slugify = (text) =>
+    text
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, "-")
+        .replace(/[^\w\-]+/g, "")
+        .replace(/\-\-+/g, "-");
 
+const BlogPage = () => {
     const blogs = [
         {
             title: "Clever ways to invest in branding to organize your business identity",
@@ -14,7 +23,7 @@ const BlogPage = () => {
         {
             title: "How to grow your profit through systematic investment in business solutions",
             img: "https://pagedone.io/asset/uploads/1696244074.png",
-            desc: "Unlock the full potential of your business with systematic investment in our wide range of tailored services. From website development and merchant solutions to signage and branding, our expert team will guide you in strategically investing in the right solutions that optimize your business growth and profitability.",
+            desc: "Unlock the full potential of your business with systematic investment in our wide range of tailored services including signage, branding, and website development.",
         },
     ];
 
@@ -22,48 +31,59 @@ const BlogPage = () => {
         <section className="py-24 bg-amber-600">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-center flex-wrap lg:flex-nowrap lg:justify-between gap-8">
+                    {/* Left Column */}
                     <div className="w-full lg:w-2/5">
-                        <h2 className="text-4xl font-bold text-gray-900 leading-[3.25rem] mb-5">
-                            <span className="text-white"></span>
+                        <h2 className="text-4xl font-bold text-white leading-[3.25rem] mb-5">
+                            Stay Updated:{" "}
                             <TypeAnimation
                                 sequence={[
-                                    // Same substring at the start will only be typed once, initially
-                                    'Our latest news',
-                                    1000,
-                                    'Our latest blogs',
-                                    1000,
-                                    'Our latest posts',
-                                    1000,
-                                    'Our latest insights',
-                                    1000,
+                                    "Latest News",
+                                    1500,
+                                    "Creative Signage Tips",
+                                    1500,
+                                    "Business Branding Insights",
+                                    1500,
+                                    "Marketing Strategies",
+                                    1500,
                                 ]}
                                 speed={50}
-                                // style={{ fontSize: '2em' }}
+                                deletionSpeed={30}
                                 repeat={Infinity}
                             />
                         </h2>
-                        <p className="text-white mb-10">
-                            Welcome to our blog section, where knowledge meets inspiration.
+                        <p className="text-white mb-10 text-base leading-relaxed">
+                            Dive into our curated articles packed with tips on signage, branding, marketing, and business growth.
                         </p>
-                        <button className="border border-gray-300 shadow-sm rounded-full py-3.5 px-7 w-52 text-white font-semibold hover:bg-gray-100 hover:text-amber-600">
-                            View All
-                        </button>
+                        {/* Optional View All Button */}
+                        {/* <Link href="/blog">
+              <button className="border border-gray-300 shadow-sm rounded-full py-3.5 px-7 w-52 text-white font-semibold hover:bg-white hover:text-amber-600 transition">
+                View All
+              </button>
+            </Link> */}
                     </div>
 
+                    {/* Right Column - Blog Cards */}
                     <div className="w-full lg:w-3/5">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {blogs.map((blog, index) => (
-                                <div key={index} className="space-y-4">
-                                    <img src={blog.img} alt={blog.title} className="rounded-2xl w-full" />
-                                    <h3 className="text-xl underline text-white font-medium">{blog.title}</h3>
+                                <div key={index} className="space-y-4 bg-white/10 p-4 rounded-2xl backdrop-blur-sm">
+                                    <img
+                                        src={blog.img}
+                                        alt={blog.title}
+                                        className="rounded-xl w-full h-40 object-cover"
+                                    />
+                                    <h3 className="text-xl underline text-white font-semibold">{blog.title}</h3>
                                     <p className="text-white text-sm">{blog.desc}</p>
-                                    <a href="#" className="text-white font-semibold">Read more</a>
+                                    <Link
+                                        href={`/blog/${slugify(blog.title)}`}
+                                        className="text-white font-semibold hover:underline"
+                                    >
+                                        Read more →
+                                    </Link>
                                 </div>
                             ))}
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>

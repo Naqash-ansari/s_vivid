@@ -11,7 +11,7 @@ const AboutText = () => {
             <div className="sm:flex items-center max-w-screen-xl">
                 <div className="sm:w-1/2 p-10">
                     <div className="image object-center text-center">
-                        <Image width={600} height={'auto'} src={img} alt='about' />
+                        <Image width={550} height={500} className='rounded' src='/about1.png' alt='about' />
                     </div>
                 </div>
                 <div className="sm:w-1/2 p-5 " >

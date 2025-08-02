@@ -10,7 +10,7 @@ const ContactForm = () => {
     const [agreed, setAgreed] = useState(false)
 
     return (
-        <div className="bg-white px-6 pt-16 mt-14 sm:pt-24 lg:pt-8 mx-auto max-w-7xl  ">
+        <div className="px-6 pt-16 mt-14 sm:pt-24 lg:pt-8 mx-auto max-w-7xl  ">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left Side: Image */}
                 <div className="w-full">
