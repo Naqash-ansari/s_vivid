@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Vivid Sign",
+  title: "Sign Vivid",
   description: "Creative solutions in signage, design, and branding.",
-  keywords: ["signage", "branding", "design", "creative", "vivid sign"],
-  authors: [{ name: "Vivid Sign" }],
-  creator: "Vivid Sign",
+  keywords: ["signage", "branding", "design", "creative", "sign vivid"],
+  authors: [{ name: "Sign Vivid" }],
+  creator: "Sign Vivid",
   openGraph: {
-    title: "Vivid Sign",
+    title: "Sign Vivid",
     description: "Creative solutions in signage, design, and branding.",
     type: "website",
     url: "https://yourwebsite.com",
@@ -29,7 +29,7 @@ export const metadata = {
         url: "/logo.jpg", // must be in /public or full URL
         width: 1200,
         height: 630,
-        alt: "Vivid Sign branding preview",
+        alt: "Sign Vivid branding preview",
       },
     ],
   },
