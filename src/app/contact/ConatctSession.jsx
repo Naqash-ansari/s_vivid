@@ -48,11 +48,11 @@ const ConatctSession = () => {
 
                     {/* Email */}
                     <div className="bg-amber-600 p-8 sm:p-12 md:p-16 rounded-xl text-center flex flex-col items-center cursor-pointer">
-                        <a href="mailto:pagedone1234@gmail.com" className="block">
+                        <a href="mailto:chwaseem1985@gmail.com" className="block">
                             <span className="text-3xl">
                                 <Image alt="email" width={200} height="auto" src={email} />
                             </span>
-                            <p className="text-white font-semibold mt-3">pagedone1234@gmail.com</p>
+                            <p className="text-white font-semibold mt-3">chwaseem1985@gmail.com</p>
                         </a>
                     </div>
 

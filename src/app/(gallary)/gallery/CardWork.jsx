@@ -1,30 +1,45 @@
 import Image from "next/image";
-import teamWork from '../../assets/gallery/team_work.gif';
 
 const CardWork = () => {
+    let teamWork = [
+        '/team2.jpg',
+        '/team1.jpg',
+        '/team3.jpg',
+    ];
+
     return (
         <div className="px-4 py-16 sm:py-20 lg:py-28 bg-[#22324c]">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
                     {/* Image Section */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <Image
+                            src='/team4.png' // cyclically use images
+                            alt={`Teamwork Image`}
+                            // layout="fill"
+                            objectFit="cover"
+                            width={500}
+                            height={500}
+                            className="rounded-lg"
+                        />
+                    </div>
+                    {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[1, 2, 3].map((item, index) => (
                             <div key={item}
-                                className={`bg-amber-600 rounded-lg p-2 text-white text-center shadow-lg  ${index === 1 ? 'animate-bounce delay-40' : ''}`}
+                                className={`bg-amber-600 rounded-lg p-2 text-white text-center shadow-lg ${index === 1 ? 'animate-bounce delay-40' : ''}`}
                             >
-                                {/* Image */}
                                 <div className="relative w-full h-86 rounded-lg overflow-hidden ">
                                     <Image
-                                        src={teamWork}
-                                        alt="Teamwork Image"
+                                        src={teamWork[index % teamWork.length]} // cyclically use images
+                                        alt={`Teamwork Image ${index + 1}`}
                                         layout="fill"
                                         objectFit="cover"
                                     />
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
 
                     {/* Text Section */}
                     <div className="text-center md:text-left text-white">
