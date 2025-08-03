@@ -5,7 +5,13 @@ import ReactPlayer from 'react-player';
 const VideoPlayer = () => {
     return (
         <figure className="relative transition-all duration-300 cursor-pointer filter grayscale-50 hover:grayscale-0">
-            <div className="w-full h-screen p-10 flex items-center justify-center text-center sm:h-[500px] md:h-[450px] lg:h-[500px] xl:h-[650px] relative overflow-hidden">
+            <div className="
+        w-full 
+        p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12
+        flex items-center justify-center text-center
+        h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[650px]
+        relative overflow-hidden
+      ">
                 <ReactPlayer
                     url="/vivid.mp4"
                     playing={true}

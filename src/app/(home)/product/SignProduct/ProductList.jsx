@@ -31,7 +31,19 @@ const ProductList = () => {
     return (
         <div className='text-center py-16 relative'>
 
-            <h1 className="text-3xl font-bold px-28 dark:text-white  iansui-regular">Elevate Your Brand with<span className='underline text-amber-600'> Premium Signage</span> —<span className='underline text-amber-600'> Design Your Own</span> or Browse Stunning Templates to Get Inspired!</h1>
+            {/* <h1 className="text-3xl font-bold px-28 dark:text-white  iansui-regular">Elevate Your Brand with<span className='underline text-amber-600'> Premium Signage</span> —<span className='underline text-amber-600'> Design Your Own</span> or Browse Stunning Templates to Get Inspired!</h1> */}
+            <h1 className="font-bold dark:text-white iansui-regular
+  text-xl px-4
+  sm:text-2xl sm:px-8
+  md:text-3xl md:px-20
+  lg:text-4xl lg:px-28
+  xl:text-5xl xl:px-32
+">
+                Elevate Your Brand with
+                <span className="underline text-amber-600"> Premium Signage</span> —
+                <span className="underline text-amber-600"> Design Your Own</span> or Browse Stunning Templates to Get Inspired!
+            </h1>
+
             <main className="main bd-grid py-6 z-50">
 
                 {currentProducts.map((product) => (
