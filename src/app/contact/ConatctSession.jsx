@@ -28,8 +28,8 @@ const ConatctSession = () => {
                             <span className="text-3xl">
                                 <Image alt="map" width={100} height="auto" src={Map_Icon} />
                             </span>
-                            <p className="text-white font-semibold mt-3">M8 0SF, UK</p>
-                            <p className="text-white font-semibold mt-1">377 Cheetham Hill House</p>
+                            <p className="text-white font-semibold mt-3">M8 8XA, UK</p>
+                            <p className="text-white font-semibold mt-1">Appleford Dr, Cheetham Hill, Manchester</p>
                         </div>
                     </a>
 

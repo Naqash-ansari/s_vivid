@@ -15,6 +15,17 @@ import './Pro.css';
 import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 
 const ProSlider = () => {
+
+    let product_images = [
+        'barber3.jpg',
+        'barber1.jpg',
+        'barber2.jpg',
+        'barber6.jpg',
+        'Barbers5.webp',
+        'barber5.avif',
+        'barber4.webp',
+    ];
+
     return (
         <div className='p-10'>
             <Swiper
@@ -35,33 +46,16 @@ const ProSlider = () => {
                 autoplay={true}
                 loop={true}
             >
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </SwiperSlide>
+                {product_images.map((img, index) => (
+                    <SwiperSlide key={index} className="!w-[300px] !h-[400px]">
+                        <img
+                            src={`/${img}`}
+                            alt={`Slide ${index + 1}`}
+                            className="w-full h-full object-cover rounded-lg"
+                        />
+                    </SwiperSlide>
+                ))}
+
             </Swiper>
         </div>
     );

@@ -29,7 +29,7 @@ const ProductList = () => {
 
 
     return (
-        <div className='text-center py-16 relative bg-slate-50'>
+        <div className='text-center py-16 relative'>
 
             <h1 className="text-3xl font-bold px-28 dark:text-white  iansui-regular">Elevate Your Brand with<span className='underline text-amber-600'> Premium Signage</span> —<span className='underline text-amber-600'> Design Your Own</span> or Browse Stunning Templates to Get Inspired!</h1>
             <main className="main bd-grid py-6 z-50">

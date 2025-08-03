@@ -4,6 +4,7 @@ import CompanyLogoCarousel from './CompanyLogoCarousel/page'
 import PrintProduct from './(home)/product/Banner/PrintProduct';
 import GoogleReview from './reviews/GoogleReview';
 import VideoPlayer from './(home)/VideoPlayer/page';
+import Welcome from './welcome/Welcome';
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <CompanyLogoCarousel />
       <PrintProduct />
       <GoogleReview />
+      <Welcome />
     </>
   );
 }

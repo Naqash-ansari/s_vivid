@@ -59,7 +59,7 @@ const Footer = () => {
                         <div>
                             <p className="font-semibold tracking-wide text-white">Get in touch</p>
                             <ul className="mt-2 space-y-2">
-                                <li><a href="tel:07876097226" className="text-white hover:text-amber-500">07876097226</a></li>
+                                <li><a href="tel:07876097226" className="text-white hover:text-amber-500">+447728339751</a></li>
                                 <li><a href="mailto:hello@signvivid.co.uk" className="text-white hover:text-amber-500">hello@signvivid.co.uk</a></li>
                             </ul>
                         </div>
