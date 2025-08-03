@@ -15,3 +15,27 @@
 .bg_origin {
   background-color: oklch(0.666 0.179 58.318);
 }
+
+/* @font-face {
+  font-family: 'MyCustomFont';
+  src: url('/font/MUSEOSANS_1.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'MyCustomFont', sans-serif !important;
+} */
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/font/MUSEOSANS_500_ITALIC.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'MyCustomFont', sans-serif !important;
+}
